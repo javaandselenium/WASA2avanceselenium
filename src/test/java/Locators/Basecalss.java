@@ -13,7 +13,7 @@ public class Basecalss {
 	public void openApp() {
 		driver=new ChromeDriver();
 		driver.manage().window().maximize();
-		driver.get("https://www.flipkart.com/");
+		driver.get("https://www.makemytrip.com/");
 		driver.manage().timeouts().implicitlyWait(15,TimeUnit.SECONDS);
 	}
 	
