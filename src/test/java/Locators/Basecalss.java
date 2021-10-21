@@ -13,7 +13,7 @@ public class Basecalss {
 	public void openApp() {
 		driver=new ChromeDriver();
 		driver.manage().window().maximize();
-		driver.get("https://www.makemytrip.com/");
+		driver.get("http://www.dhtmlgoodies.com/submitted-scripts/i-google-like-drag-drop/");
 		driver.manage().timeouts().implicitlyWait(15,TimeUnit.SECONDS);
 	}
 	
