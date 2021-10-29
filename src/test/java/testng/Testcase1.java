@@ -9,9 +9,11 @@ import org.testng.Assert;
 import org.testng.Reporter;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
+@Listeners(Demo.class)
 public class Testcase1 {
 	public WebDriver driver;
 	
@@ -31,6 +33,7 @@ public class Testcase1 {
 		driver.findElement(By.name("login")).click();
 		String title = driver.getTitle();
 		Reporter.log(title,true);
+		Assert.assertEquals(title," or sign up");
 		
 	
 		
